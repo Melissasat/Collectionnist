@@ -1,7 +1,4 @@
 fr:
-  date:
-    formats:
-      default: '%A%b%a%a'
   opening_times:
     day_1: "Lundi"
     day_2: "Mardi"
