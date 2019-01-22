@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190121124224) do
+ActiveRecord::Schema.define(version: 20190121194753) do
+
+  create_table "opening_times", force: :cascade do |t|
+    t.string "morning_start"
+    t.string "morning_end"
+    t.string "evening_start"
+    t.string "evening_end"
+    t.integer "index"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "shop_id"
+    t.index ["shop_id"], name: "index_opening_times_on_shop_id"
+  end
 
   create_table "shops", force: :cascade do |t|
     t.string "name"

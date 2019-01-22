@@ -1,0 +1,13 @@
+fr:
+  date:
+    formats:
+      default: '%A%b%a%a'
+  opening_times:
+    day_1: "Lundi"
+    day_2: "Mardi"
+    day_3: "Mercredi"
+    day_4: "Jeudi"
+    day_5: "Vendredi"
+    day_6: "Samedi"
+    day_0: "Dimanche"
+

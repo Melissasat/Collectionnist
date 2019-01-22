@@ -1,0 +1,20 @@
+<style>
+  .bold {
+    font-weight: bold;
+  }
+  td {
+    width: 100px;
+  }
+</style>
+<p id="notice"><%= notice %></p>
+<div>
+  <% @shop.get_days_order.each do |times| %>
+    <table class="<%= 'bold' if times.index == (Time.now.strftime('%w').to_i) %>">
+      <tr>
+        <td><%= t('opening_times.day_' + times.index.to_s) %></td>
+        <td><%= times.get_morning_openings %></td>
+        <td><%= times.get_evening_openings %></td>
+      </tr>
+    </table>
+  <% end %>
+</div>
